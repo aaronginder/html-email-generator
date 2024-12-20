@@ -1,0 +1,40 @@
+name: test-website
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches-ignore: 
+        - main
+    tags-ignore: '*'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Job to run Unit tests
+  unittest:
+    runs-on: ubuntu-latest
+    container: 
+      image: ghcr.io/aaronginder/python:3.12.5
+
+    steps:
+      # Step to check out the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step to run Unit tests
+      - name: Run Unit tests
+        working-directory: tests/unittests
+        run: |
+            cp -r src/main src/test/unittests;
+            flutter test

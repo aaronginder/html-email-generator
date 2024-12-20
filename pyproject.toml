@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "emailer"
+version = "0.1.0"
+description = "Creates a html file that can be used for emails."
+authors = ["Aaron Ginder <aaronginder@hotmail.co.uk>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+PyYAML = "^6.0.2"
+pytest = "^8.3.3"
+hypothesis = "^6.112.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+packge-mode = false

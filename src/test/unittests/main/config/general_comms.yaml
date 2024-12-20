@@ -1,0 +1,69 @@
+# General Comms Template
+# A template for providing an update in the format of a paragraph message. This is similar to a professional email that sent internally by BT Digital.
+#
+# The template has the following sections:
+#   - Image header as a banner of the email
+#   - Details of who the email is from and for, and purpose
+#   - Paragarph of the details of the email, including any updates
+
+title: "General Comms"
+
+layout:
+  type: "newsletter"
+  width: "750px"
+
+sections:
+  - type: "header"
+    content: "Example Newsletter"
+    styles:
+      background-color: "#007B85"
+      color: "#ffffff"
+      padding: "20px 0px 20px 0px"
+      text-align: "center"
+      font-size: "40px"
+      border-radius: "0px"
+      
+  
+  - type: "paragraph"
+    width: "100%"
+    content: |
+      <b>To:</b> Audience
+      <b>From:</b> Aaron Ginder
+      <b>Status:</b> Knowledge Sharing
+    styles:
+      background-color: "#d1d2d3"
+      color: "#333333"
+      padding: "20px"
+      font-size: "16px"
+      border-radius: "0px"
+      text-align: left
+      font-family: Arial
+
+  - type: "paragraph"
+    width: "100%"
+    content: |
+      This template can be used to share generic comms to the target audience. The intention of this template is provide a text-based update, with the option of having a picture.
+
+      The template can be configured in many ways - from a style and format perspective. Don't like the colors? Well, there's a variety of things you can change:
+      
+      <li>Background color</li><li>Text color</li><li>Padding & margin</li><li>Font style and size</li><li>Border</li><li>Alignment</li><li>And more!</li>
+
+      Feel free to use this template to suit your needs.
+    styles:
+      background-color: "#ffffff"
+      color: "#333333"
+      padding: "30px"
+      font-size: "16px"
+      border-radius: "0px"
+      text-align: left
+      font-family: Arial
+
+  - type: "image"
+    src: "src/main/assets/signature (3).png"
+    alt: "Image description here"
+    width: "20%"
+    # height: "auto"
+    styles:
+      # background-color: "#007B85"
+      # padding: "10px 0px 40px 0px"
+      align: "left"
