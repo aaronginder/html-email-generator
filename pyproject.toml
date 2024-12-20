@@ -5,6 +5,7 @@ description = "Creates a html file that can be used for emails."
 authors = ["Aaron Ginder <aaronginder@hotmail.co.uk>"]
 license = "MIT"
 readme = "README.md"
+packge-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -16,4 +17,3 @@ hypothesis = "^6.112.1"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-packge-mode = false

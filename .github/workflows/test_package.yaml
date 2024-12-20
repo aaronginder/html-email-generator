@@ -32,9 +32,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+        # Set up unit tests
+      - name: Set up unit tests
+        run: |
+            cp -r src/main src/test/unittests   
+            python -m pip poetry install --upgrade pip
+            poetry install
+
       # Step to run Unit tests
       - name: Run Unit tests
         working-directory: tests/unittests
-        run: |
-            cp -r src/main src/test/unittests;
-            flutter test
+        run: 
