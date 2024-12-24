@@ -161,4 +161,7 @@ cython_debug/
 #.idea/
 
 # Custom
-target/*
+target/**
+src/test/unittests/main/
+.vscode/
+node_modules/

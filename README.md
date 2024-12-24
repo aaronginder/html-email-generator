@@ -1,16 +1,19 @@
-<style>
-  .center-image {
-      display: flex;
-      justify-content: center;
-  }
-</style>
-<h1 class="center-image">Newsletter HTML Generator</h1>
+# Newsletter HTML Generator
 
 <img src="assets/newletter_header.jpg">
 
 ## Table of Contents
 
-[[_TOC_]]
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Configuring an Email](#configuring-an-email)
+  - [Sending a HTML Email](#sending-a-html-email)
+- [Contributions](#contributions)
+- [Feature Enhancements](#feature-enhancements)
+- [Testing](#testing)
+  - [Unit tests](#unit-tests)
+- [Supporting References](#supporting-references)
 
 ### Introduction
 
@@ -18,7 +21,7 @@ The Email Newsletter HTML Generator is a Python program designed to automate the
 
 The program reads the YAML configuration, processes each section, and generates a well-formatted HTML file. It also supports embedding images using Base64 encoding, making it easy to include assets directly in the email. This generated HTML can then be embedded into an email client like Outlook for sending professional newsletters or announcements. The program is highly configurable, enabling users to easily update content and styling through the YAML file.
 
-### Installation
+## Installation
 
 Below are the pre-requisites that can be used to generate the expected output of this repository.
 
@@ -36,11 +39,9 @@ pip install -r poetry;
 poetry install;
 ```
 
-### Usage
+## Usage
 
-\# TODO -> Navigate
-
-#### Configuring an Email
+### Configuring an Email
 
 Specification for the `contents.yaml`:
 
@@ -205,7 +206,7 @@ The above configuration creates the below HTML file:
 <img src="assets/example_output.png" style="width:75%;height:auto;">
 </div>
 
-#### Sending a HTML Email
+### Sending a HTML Email
 
 1. Open the html email file in the `target` folder. Copy the contents of the whole file
 2. Remove all text in the email body. Then, type "***" in your email body
@@ -214,7 +215,7 @@ The above configuration creates the below HTML file:
 5. Right click, "Edit as HTML". Replace the html code with the code you copied in step 1.
 6. Close the inspector and send your email
 
-### Contributions
+## Contributions
 
 We welcome contributions to this project. Please follow these steps:
 
@@ -223,17 +224,17 @@ We welcome contributions to this project. Please follow these steps:
 - Push to the branch (git push origin feature/your-feature).
 - Create a new pull request.
 
-### Feature Enhancements
+## Feature Enhancements
 
 - Add more unit test coverage
 - Implement integration tests for HTML file generation
 - In addition to email generation, send the email to specified recipients
 
-### Testing
+## Testing
 
 Details all the testing as part of this solution.
 
-#### Unit Tests
+### Unit Tests
 
 This section details the unit tests that have been implemented as part of this repository. These unit tests are ran in non-prod VPC environments before deploying artifacts.
 
@@ -246,6 +247,7 @@ This section details the unit tests that have been implemented as part of this r
 |test_image_alt_text|Test that random alt text appears correctly in the generated HTML|Neutral|
 |test_invalid_image_path|Test that the HTML correctly handles invalid image paths|Negative|
 
-### Supporting References
+## Supporting References
 
-N/A
+- [Example config](./src/main/config/general_comms.yaml)
+- [Example output](./target/general_comms_email.html)

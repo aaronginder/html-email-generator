@@ -14,9 +14,9 @@ layout:
 
 sections:
   - type: "header"
-    content: "Example Newsletter"
+    content: "Example Comms Message"
     styles:
-      background-color: "#007B85"
+      background-color: "#3293a8"
       color: "#ffffff"
       padding: "20px 0px 20px 0px"
       text-align: "center"
@@ -29,7 +29,7 @@ sections:
     content: |
       <b>To:</b> Audience
       <b>From:</b> Aaron Ginder
-      <b>Status:</b> Knowledge Sharing
+      <b>Subject:</b> Knowledge Sharing
     styles:
       background-color: "#d1d2d3"
       color: "#333333"

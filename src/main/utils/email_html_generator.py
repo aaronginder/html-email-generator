@@ -18,6 +18,7 @@ class EmailHTMLGenerator:
         self.config_file = config_file
         self.output_file = output_file
         self.config = self.load_config()
+        os.makedirs("target", exist_ok=True)
 
     def load_config(self) -> Dict[str, Any]:
         """

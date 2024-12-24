@@ -5,7 +5,7 @@ description = "Creates a html file that can be used for emails."
 authors = ["Aaron Ginder <aaronginder@hotmail.co.uk>"]
 license = "MIT"
 readme = "README.md"
-packge-mode = false
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.8"
