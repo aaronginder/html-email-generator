@@ -250,4 +250,3 @@ This section details the unit tests that have been implemented as part of this r
 ## Supporting References
 
 - [Example config](./src/main/config/general_comms.yaml)
-- [Example output](./target/general_comms_email.html)
