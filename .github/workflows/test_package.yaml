@@ -41,4 +41,4 @@ jobs:
       # Step to run Unit tests
       - name: Run Unit tests
         run: |
-          poetry run python -m pytest
+          poetry run python -m pytest --verbose
