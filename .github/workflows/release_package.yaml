@@ -2,7 +2,7 @@ name: release-package
 
 on:
     push:
-      branches: ["alpha", "beta", "main", "develop"]
+      branches: ["alpha", "beta", "main"]
   
     workflow_dispatch:
       inputs:

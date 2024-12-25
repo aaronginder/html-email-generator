@@ -4,7 +4,7 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches-ignore: 
-        - main
+        - main  
     tags-ignore: '*'
 
   # Allows you to run this workflow manually from the Actions tab
@@ -35,13 +35,12 @@ jobs:
         # Set up unit tests
       - name: Set up unit tests
         run: |
-            cp -r src/main src/test/unittests   
-            python3.12 -m pip poetry install --upgrade pip
+            cp -r src/main src/tests/unittests   
+            python3.12 -m pip install poetry --upgrade pip
             poetry install
 
       # Step to run Unit tests
       - name: Run Unit tests
         working-directory: src/tests/unittests
         run: |
-          poetry shell
-          python -m unittest discover
+          poetry run python -m unittest discover
