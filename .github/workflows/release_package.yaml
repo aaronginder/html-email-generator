@@ -1,16 +1,21 @@
 name: release-package
 
 on:
-    push:
-      branches: ["alpha", "beta", "main"]
-  
-    workflow_dispatch:
-      inputs:
-        release_type:
-          description: "Type of release: alpha, beta, or stable"
-          required: false
-          default: "stable"
-          type: string
+  push:
+    branches: ["alpha", "beta", "main"]
+
+  workflow_dispatch:
+    inputs:
+      release_type:
+        description: "Type of release: alpha, beta, or stable"
+        required: false
+        default: "stable"
+        type: string
+
+  workflow_run:
+    workflows: ["tests"]
+    types:
+      - completed
 
 jobs:
   release:
