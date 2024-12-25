@@ -8,32 +8,31 @@ sections:
   - type: "header"
     content: "Demo Header Content Here"
     styles:
-      background-color: "#007B85"
+      background-color: "#241d1d"
       color: "#ffffff"
       padding: "15px"
       text-align: "center"
       font-size: "24px"
-      border-radius: "5px"
 
   - type: "paragraph"
     content: |
       <i>For optimal viewing of this email, use the <b>web</b> or <b>new outlook</b> application!</i>
     styles:
-      background-color: "#e9ecef"
-      color: "#333333"
+      background-color: "#241d1d"
+      color: "#ffffff"
       padding: "5px"
       font-size: "16px"
-      border-radius: "0px"
       text-align: center
 
   - type: "image"
-    src: "src/main/assets/backgrounds/coding-sample.jpg"
+    src: "src/main/assets/example_1.webp"
     alt: "Image description here"
-    width: "50%"
+    width: "auto"
     height: "auto"
     styles:
-      border-radius: "10px"
-      padding: "20px"
+      # border-radius: "10px"
+      # padding: "20px"
+      color: "#ffffff"
       text-align: "center"
 
   - type: "paragraph"
@@ -44,9 +43,9 @@ sections:
       background-color: "#ffffff"
       color: "#333333"
       padding: "20px"
-      font-size: "24px"
-      text-align: "left"
-      border-radius: "5px"
+      font-size: "20px"
+      text-align: "center"
+      # border-radius: "5px"
 
   - type: "list"
     items:
@@ -57,41 +56,41 @@ sections:
       color: "#333333"
       padding: "15px"
       font-size: "16px"
-      border-radius: "5px"
+      # border-radius: "5px"
       list-style-type: "disc"
 
   - type: "block"
     styles:
       background-color: "#ffffff"
       padding: "20px"
-      border-radius: "5px"
+      # border-radius: "5px"
       box-shadow: "0px 0px 5px rgba(0, 0, 0, 0.1)"
     rows:
       - columns:
           - type: "icon"
-            src: "src/main/assets/icons/arrowsin.jpg"
+            src: "src/main/assets/work-icon.jpg"
             alt: "Icon description"
-            width: "100px"
+            width: "80px"
             height: "auto"
             styles:
-              margin-right: "10px"
+              padding: 10px 10px 0px 0px
           - type: "text"
             content: "An example of a column in a row!"
             styles:
               font-size: "16px"
               text-align: "center"
+              padding: 10px 30px 0px 0px
           - type: "link"
             content: "Click Here"
             href: "https://www.linkedin.com/in/aaron-ginder/"
             styles:
-              color: "#007BFF"
               text-decoration: "none"
               font-size: "16px"
               padding: "10px 15px"
-              border-radius: "5px"
+              border-radius: "35px"
 
   - type: "image"
-    src: "src/main/assets/icons/btgroup-small.jpg"
+    src: "src/main/assets/work_2.png"
     alt: "Image description here"
     width: "25%"
     height: "auto"

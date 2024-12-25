@@ -165,3 +165,4 @@ target/**
 src/test/unittests/main/
 .vscode/
 node_modules/
+src/main/config/contents.yaml

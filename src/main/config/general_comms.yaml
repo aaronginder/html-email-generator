@@ -16,7 +16,7 @@ sections:
   - type: "header"
     content: "Example Comms Message"
     styles:
-      background-color: "#3293a8"
+      background-color: "#542428"
       color: "#ffffff"
       padding: "20px 0px 20px 0px"
       text-align: "center"
@@ -60,7 +60,7 @@ sections:
 
   - type: "image"
     src: "src/main/assets/signature (3).png"
-    alt: "Image description here"
+    alt: "Example alt image description"
     width: "20%"
     # height: "auto"
     styles:

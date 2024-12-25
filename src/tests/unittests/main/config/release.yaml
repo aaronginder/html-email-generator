@@ -164,7 +164,7 @@ sections:
               padding: "25px 30px 0px 50px"
 
   - type: "image"
-    src: "src/main/assets/icons/btgroup-small.jpg"
+    src: "src/main/assets/icons/image-small.jpg"
     alt: "Image description here"
     width: "25%"
     height: "auto"
