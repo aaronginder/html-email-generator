@@ -35,12 +35,10 @@ jobs:
         # Set up unit tests
       - name: Set up unit tests
         run: |
-            cp -r src/main src/tests/unittests   
             python3.12 -m pip install poetry --upgrade pip
             poetry install
 
       # Step to run Unit tests
       - name: Run Unit tests
-        working-directory: src/tests/unittests
         run: |
-          poetry run python -m unittest discover
+          poetry run python -m pytest
