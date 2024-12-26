@@ -41,4 +41,5 @@ jobs:
       # Step to run Unit tests
       - name: Run Unit tests
         run: |
+          cp -r src/main src/tests/unittests
           poetry run python -m pytest --verbose
