@@ -21,6 +21,10 @@ The Email Newsletter HTML Generator is a Python program designed to automate the
 
 The program reads the YAML configuration, processes each section, and generates a well-formatted HTML file. It also supports embedding images using Base64 encoding, making it easy to include assets directly in the email. This generated HTML can then be embedded into an email client like Outlook for sending professional newsletters or announcements. The program is highly configurable, enabling users to easily update content and styling through the YAML file.
 
+<div class=center-image>
+<img src="assets/sample_2_output.png" style="height:700px;">
+</div>
+
 ## Installation
 
 Below are the pre-requisites that can be used to generate the expected output of this repository.

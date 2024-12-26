@@ -22,7 +22,20 @@ sections:
       text-align: "center"
       font-size: "40px"
       border-radius: "0px"
-      
+      font-family: Arial, sans-serif
+
+  - type: "paragraph"
+    width: "100%"
+    content: |
+      For optimal viewing of this email, use the web or new outlook application!
+    styles:
+      background-color: "#d1d2d3"
+      color: "#333333"
+      padding: "20px"
+      font-size: "16px"
+      border-radius: "0px"
+      text-align: center
+      font-family: Arial      
   
   - type: "paragraph"
     width: "100%"
@@ -59,11 +72,8 @@ sections:
       font-family: Arial
 
   - type: "image"
-    src: "src/main/assets/signature (3).png"
+    src: "src/main/assets/signature (1).png"
     alt: "Example alt image description"
     width: "20%"
-    # height: "auto"
     styles:
-      # background-color: "#007B85"
-      # padding: "10px 0px 40px 0px"
       align: "left"

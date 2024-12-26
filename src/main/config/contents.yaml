@@ -30,8 +30,6 @@ sections:
     width: "auto"
     height: "auto"
     styles:
-      # border-radius: "10px"
-      # padding: "20px"
       color: "#ffffff"
       text-align: "center"
 

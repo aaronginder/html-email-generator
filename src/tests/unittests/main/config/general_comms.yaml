@@ -59,7 +59,7 @@ sections:
       font-family: Arial
 
   - type: "image"
-    src: "src/main/assets/signature (3).png"
+    src: "src/main/assets/signature (1).png"
     alt: "Image description here"
     width: "20%"
     # height: "auto"

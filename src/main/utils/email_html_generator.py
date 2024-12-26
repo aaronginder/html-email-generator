@@ -2,7 +2,7 @@ import os
 import yaml
 import base64
 from typing import Dict, Any
-
+import logging
 
 class EmailHTMLGenerator:
     """A class to generate HTML emails with embedded Base64 images from a YAML configuration."""
@@ -17,8 +17,18 @@ class EmailHTMLGenerator:
         """
         self.config_file = config_file
         self.output_file = output_file
+        self.logger = logging.getLogger(__class__.__name__)
         self.config = self.load_config()
         os.makedirs("target", exist_ok=True)
+        
+        # Logging
+        self.logger.setLevel(logging.INFO)
+        console_handler = logging.StreamHandler()
+        console_handler.setLevel(logging.INFO)
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        console_handler.setFormatter(formatter)
+        self.logger.addHandler(console_handler)
+        self.logger.info(f"Initialized with config file: {config_file} and output file: {output_file}")  
 
     def load_config(self) -> Dict[str, Any]:
         """
@@ -27,9 +37,20 @@ class EmailHTMLGenerator:
         Returns:
             Dict[str, Any]: A dictionary containing the configuration data.
         """
-        with open(self.config_file, 'r') as file:
-            config = yaml.safe_load(file)
-        return config
+        try:
+            with open(self.config_file, 'r', encoding="UTF-8") as file:
+                config = yaml.safe_load(file)
+            self.logger.info("Configuration loaded successfully.")
+            return config
+        except FileNotFoundError:
+            self.logger.error(f"Configuration file {self.config_file} not found.")
+            raise
+        except yaml.YAMLError as e:
+            self.logger.error(f"Error parsing YAML file: {e}")
+            raise
+        except Exception as e:
+            self.logger.error(f"Unexpected error: {e}")
+            raise
 
     @staticmethod
     def encode_image_base64(image_path: str) -> str:
@@ -42,9 +63,16 @@ class EmailHTMLGenerator:
         Returns:
             str: The Base64 encoded image as a UTF-8 string.
         """
-        with open(image_path, 'rb') as img_file:
-            encoded_string = base64.b64encode(img_file.read()).decode('utf-8')
-        return encoded_string
+        try:
+            with open(image_path, 'rb') as image_file:
+                encoded_image = base64.b64encode(image_file.read()).decode('utf-8')
+            return encoded_image
+        except FileNotFoundError:
+            logging.error(f"Image file {image_path} not found.")
+            raise
+        except Exception as e:
+            logging.error(f"Unexpected error encoding image: {e}")
+            raise
 
     def generate_html(self) -> None:
         """
@@ -53,6 +81,10 @@ class EmailHTMLGenerator:
         html_start = """<!DOCTYPE html>
         <html>
         <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <title>{title}</title>
+            <style>
             <title>{title}</title>
             <style>
                 body {{ font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }}
@@ -93,8 +125,7 @@ class EmailHTMLGenerator:
         # Write the HTML content to the output file
         with open(self.output_file, 'w', encoding='utf-8') as f:
             f.write(html_content)
-        
-        print(f"HTML file generated successfully: {self.output_file}")
+        self.logger.info(f"HTML file generated successfully: {self.output_file}")
 
     def build_section(self, section: Dict[str, Any]) -> str:
         """
@@ -274,7 +305,6 @@ class EmailHTMLGenerator:
         border_radius = column.get("styles", {}).get("border-radius", "16px")  # Default to 16px if not provided
         button_height = column.get("styles", {}).get("button-height", "auto")  # Default to 16px if not provided
         button_height = column.get("styles", {}).get("background-button-color", "none") 
-        print(button_height)
         return f'''
         <td class="button-container" style="{column_style_str}" width="{col_width}">
             <table align="center" cellpadding="0" cellspacing="0" border="0">

@@ -1,0 +1,95 @@
+title: "Summer Collection Launch"
+
+layout:
+  type: "newsletter"
+  width: "600px"
+
+sections:
+  - type: "header"
+    content: "NEW ARRIVALS"
+    styles:
+      background: "#FF69B4"
+      color: "#ffffff"
+      padding: "40px 20px"
+      text-align: "center"
+      font-size: "38px"
+      font-family: "Helvetica Neue, Arial, sans-serif"
+      letter-spacing: "3px"
+      text-transform: "uppercase"
+      font-weight: "300"
+
+  - type: "image"
+    src: "src/main/assets/sample_2_product_example.jpg"
+    alt: "Summer Collection Banner"
+    styles:
+      align: "center"
+      padding: "0px"
+
+  - type: "paragraph"
+    width: "100%"
+    content: |
+      🌞 <b>Embrace the Season in Style!</b> 🌞
+      
+      Get ready to elevate your summer wardrobe with our newest collection. 
+      From breezy sundresses to sophisticated beachwear, we've curated the 
+      perfect pieces for your summer adventures.
+    styles:
+      background-color: "#f8f8f8"
+      color: "#333333"
+      padding: "20px"
+      font-size: "16px"
+      line-height: "1.5"
+      text-align: "center"
+      font-family: "Arial, sans-serif"
+
+  - type: "paragraph"
+    width: "100%"
+    content: |
+      🎉 <b>Early Bird Special Offer</b> 🎉
+      
+      First 100 customers get 20% off using code: SUMMER24
+      
+      Plus, enjoy:
+      • Free shipping on orders over $100
+      • Express delivery options available
+      • Easy returns within 30 days
+    styles:
+      background-color: "#f8f8f8"
+      color: "#333333"
+      padding: "25px"
+      font-size: "16px"
+      text-align: "center"
+      font-family: "Arial, sans-serif"
+      margin: "20px 0"
+
+  - type: "paragraph"
+    width: "100%"
+    content: |
+      Connect with us:
+      📱 Instagram: @FashionBoutique
+      📘 Facebook: Fashion Boutique Official
+      📌 Pinterest: FashionBoutiqueStyle
+    styles:
+      background: "#FF69B4"
+      color: "#ffffff"
+      padding: "20px"
+      font-size: "14px"
+      text-align: "center"
+      font-family: "Arial, sans-serif"
+
+  - type: "paragraph"
+    width: "100%"
+    content: |
+      Fashion Boutique Inc.
+      123 Style Street, Fashion District
+      New York, NY 10001
+      
+      You received this email because you subscribed to our newsletter.
+      [Unsubscribe] | [View in Browser]
+    styles:
+      background-color: "#333333"
+      color: "#ffffff"
+      padding: "20px"
+      font-size: "12px"
+      text-align: "center"
+      font-family: "Arial, sans-serif"
