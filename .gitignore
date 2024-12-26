@@ -162,7 +162,7 @@ cython_debug/
 
 # Custom
 target/**
-src/test/unittests/main/
+src/tests/unittests/main/
 .vscode/
 node_modules/
 src/main/config/contents.yaml
