@@ -240,7 +240,7 @@ Details all the testing as part of this solution.
 
 ### Unit Tests
 
-This section details the unit tests that have been implemented as part of this repository. These unit tests are ran in non-prod VPC environments before deploying artifacts.
+This section details the unit tests that have been implemented as part of this repository.
 
 |Test Case  | Description   | Test Case Type   |
 |-----------|---------------|------------------|
