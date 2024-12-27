@@ -12,11 +12,6 @@ on:
         default: "stable"
         type: string
 
-  workflow_run:
-    workflows: ["tests"]
-    types:
-      - completed
-
 jobs:
   release:
     permissions:

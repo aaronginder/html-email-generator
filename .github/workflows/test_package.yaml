@@ -4,7 +4,9 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches-ignore: 
-        - main  
+        - main
+        - alpha
+        - beta
     tags-ignore: '*'
 
   # Allows you to run this workflow manually from the Actions tab
