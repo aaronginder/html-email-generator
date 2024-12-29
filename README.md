@@ -37,7 +37,7 @@ To install the packages in the library locally, execute:
 
 ```sh
 # Install the poetry package manager
-pip install -r poetry;
+pip install poetry;
 
 # Install the package dependencies
 poetry install;
