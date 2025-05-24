@@ -29,7 +29,6 @@ version_variable = [
 ]
 version_source = "commit"
 commit_parser = "conventional"
-branch = "main"
 commit_message = "chore(release): {version} [skip ci]"
 tag_format = "v{version}"
 major_on_zero = false
@@ -46,14 +45,12 @@ prerelease_token = "dev"
 [tool.semantic_release.branches.alpha]
 prerelease = true
 prerelease_token = "alpha"
+match = "alpha"
 
 [tool.semantic_release.branches.beta]
 prerelease = true
 prerelease_token = "beta"
-
-[tool.semantic_release.branches.rc]
-prerelease = true
-prerelease_token = "rc"
+match = "beta"
 
 [tool.semantic_release.changelog]
 template_dir = "templates"
