@@ -17,15 +17,27 @@
 
 ### Introduction
 
-The Email Newsletter HTML Generator is a Python program designed to automate the creation of HTML email templates using a configuration defined in a YAML file. It allows users to specify various sections of the email, such as headers, paragraphs, lists, images, and custom blocks, along with styling options.
+The Email Newsletter HTML Generator is a Python package designed to automate the creation of HTML email templates using YAML configurations. It allows you to easily create professional email newsletters with various elements:
 
-The program reads the YAML configuration, processes each section, and generates a well-formatted HTML file. It also supports embedding images using Base64 encoding, making it easy to include assets directly in the email. This generated HTML can then be embedded into an email client like Outlook for sending professional newsletters or announcements. The program is highly configurable, enabling users to easily update content and styling through the YAML file.
+- Headers and footers
+- Paragraphs with rich formatting
+- Bulleted lists
+- Images with embedding via Base64
+- Custom blocks with multiple columns
+- Icons and links
 
-<div class=center-image>
-<img src="assets/sample_2_output.png" style="height:700px;">
+The generator creates well-formatted HTML files that can be directly used in email clients like Outlook for sending professional newsletters or announcements.
+
+<div class="center-image">
+  <img src="assets/sample_2_output.png" style="height:700px;margin-right: 10px;">
+  <img src="assets/sample_output_watches.png" style="height:700px; margin-right: 10px;">
+  <br>
+  <img src="assets/announcement.png" style="height:600px;">
 </div>
 
 ## Installation
+
+### Requirements
 
 Below are the pre-requisites that can be used to generate the expected output of this repository.
 
@@ -33,9 +45,27 @@ Below are the pre-requisites that can be used to generate the expected output of
 |-----------|-----------|
 |Python     | `3`       |
 
-To install the packages in the library locally, execute:
+### Install from GitHub
 
 ```sh
+pip install git+https://github.com/aaronginder/html-email-generator.git
+```
+
+To install a specific version:
+
+```sh
+pip install git+https://github.com/aaronginder/html-email-generator.git@v1.0.0
+```
+
+### Development Installation
+
+If you want to contribute or modify the package:
+
+```sh
+# Clone the repository
+git clone https://github.com/aaronginder/html-email-generator.git
+cd html-email-generator
+
 # Install the poetry package manager
 pip install poetry;
 
@@ -120,7 +150,7 @@ sections:
       text-align: center
 
   - type: "image"
-    src: "src/main/assets/backgrounds/coding-sample.jpg"
+    src: "samples/assets/backgrounds/coding-sample.jpg"
     alt: "Image description here"
     width: "75%"
     height: "auto"
@@ -163,7 +193,7 @@ sections:
     rows:
       - columns:
           - type: "icon"
-            src: "src/main/assets/icons/click-color.jpg"
+            src: "samples/assets/icons/click-color.jpg"
             alt: "Icon description"
             width: "100px"
             height: "auto"
@@ -185,7 +215,7 @@ sections:
               border-radius: "5px"
 
   - type: "image"
-    src: "src/main/assets/icons/image-small.jpg"
+    src: "samples/assets/icons/image-small.jpg"
     alt: "Image description here"
     width: "25%"
     height: "auto"
@@ -236,8 +266,6 @@ We welcome contributions to this project. Please follow these steps:
 
 ## Testing
 
-Details all the testing as part of this solution.
-
 ### Unit Tests
 
 This section details the unit tests that have been implemented as part of this repository.
@@ -253,4 +281,4 @@ This section details the unit tests that have been implemented as part of this r
 
 ## Supporting References
 
-- [Example config](./src/main/config/general_comms.yaml)
+Refer to the `samples/` directory for configuration examples.

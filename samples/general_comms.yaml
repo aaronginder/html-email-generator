@@ -16,7 +16,7 @@ sections:
   - type: "header"
     content: "Example Comms Message"
     styles:
-      background-color: "#542428"
+      background-color: "#394aa8"
       color: "#ffffff"
       padding: "20px 0px 20px 0px"
       text-align: "center"
@@ -27,7 +27,7 @@ sections:
   - type: "paragraph"
     width: "100%"
     content: |
-      For optimal viewing of this email, use the web or new outlook application!
+      <i>For optimal viewing of this email, use the web or new outlook application!</i>
     styles:
       background-color: "#d1d2d3"
       color: "#333333"
@@ -72,7 +72,7 @@ sections:
       font-family: Arial
 
   - type: "image"
-    src: "src/main/assets/signature (1).png"
+    src: "samples/assets/signature_sample.png"
     alt: "Example alt image description"
     width: "20%"
     styles:

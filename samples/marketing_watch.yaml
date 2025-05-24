@@ -1,0 +1,73 @@
+title: "Product Watch Release"
+
+layout:
+  type: "newsletter"
+  width: "500px"
+
+sections:
+  - type: "header"
+    content: "NEW ARRIVALS"
+    styles:
+      background: "#070c10"
+      color: "#ffffff"
+      padding: "40px 20px"
+      text-align: "center"
+      font-size: "38px"
+      font-family: "Helvetica Neue, Arial, sans-serif"
+      letter-spacing: "3px"
+      text-transform: "uppercase"
+      font-weight: "300"
+
+  - type: "image"
+    src: "samples/assets/watch_product.jpg"
+    alt: "Product Watch Release"
+    width: "100%"
+    height: "auto"
+    styles:
+      text-align: "center"
+  
+  - type: "paragraph"
+    width: "100%"
+    content: |
+      <b>Introducing the latest in our watch collection!</b>
+
+      Discover the perfect blend of style and functionality with our new watch release.<br>
+
+    styles:
+      background: "#070c10"
+      color: "#ffffff"
+      font-size: "16px"
+      # line-height: "1.5"
+      text-align: "center"
+      font-family: "Arial, sans-serif"
+  
+  - type: "paragraph"
+    width: "100%"
+    content: |
+      Connect with us:
+      📱 Instagram: @aaronginder
+      📌 Pinterest: aaronginder
+    styles:
+      background: "#1c2a35"
+      color: "#ffffff"
+      padding: "20px"
+      font-size: "14px"
+      text-align: "center"
+      font-family: "Arial, sans-serif"
+
+  - type: "paragraph"
+    width: "100%"
+    content: |
+      Fashion Boutique Inc.
+      123 Style Street, Fashion District
+      New York, NY 10001
+      
+      You received this email because you subscribed to our newsletter.
+      [Unsubscribe] | [View in Browser]
+    styles:
+      background: "#1c2a35"
+      color: "#ffffff"
+      padding: "20px"
+      font-size: "12px"
+      text-align: "center"
+      font-family: "Arial, sans-serif"

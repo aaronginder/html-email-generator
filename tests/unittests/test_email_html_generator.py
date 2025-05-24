@@ -2,7 +2,7 @@ import pytest
 import os
 import yaml
 from unittest import mock
-from main.utils.email_html_generator import EmailHTMLGenerator
+from emailer.generator import EmailHTMLGenerator
 
 # Fixtures
 @pytest.fixture

@@ -4,6 +4,7 @@ import base64
 from typing import Dict, Any
 import logging
 
+
 class EmailHTMLGenerator:
     """A class to generate HTML emails with embedded Base64 images from a YAML configuration."""
 
@@ -127,6 +128,15 @@ class EmailHTMLGenerator:
             f.write(html_content)
         self.logger.info(f"HTML file generated successfully: {self.output_file}")
 
+    def validate_section(self, section_type: str) -> None:
+        """
+        Validates the structure of the sections in the configuration.
+        This method can be extended to include specific validation rules.
+        """
+        valid_sections = {"header", "paragraph", "footer", "list", "image", "block"}
+        if section_type not in valid_sections:
+            self.logger.warning(f"Invalid section type: {section_type}. Expected one of {valid_sections}. Skipping this section.")
+
     def build_section(self, section: Dict[str, Any]) -> str:
         """
         Builds a specific section of the HTML content based on the section type and styles.
@@ -143,6 +153,10 @@ class EmailHTMLGenerator:
         style_str = "; ".join([f"{k}: {v}" for k, v in styles.items() if k != "width"])
         content = ""
 
+        # Validate the section type
+        self.validate_section(section_type)
+
+        # Build the content based on the section type
         if section_type in {"header", "paragraph", "footer"}:
             # Replace newlines with <br> tags
             content_details = section.get("content", "").replace("\n", "<br>")

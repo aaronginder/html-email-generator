@@ -5,7 +5,7 @@ layout:
   width: "750px"
 
 sections:
-  - type: "header"
+  - type: "headers"
     content: "Demo Header Content Here"
     styles:
       background-color: "#241d1d"
@@ -25,7 +25,7 @@ sections:
       text-align: center
 
   - type: "image"
-    src: "src/main/assets/example_1.webp"
+    src: "samples/assets/example_1.webp"
     alt: "Image description here"
     width: "auto"
     height: "auto"
@@ -66,7 +66,7 @@ sections:
     rows:
       - columns:
           - type: "icon"
-            src: "src/main/assets/work-icon.jpg"
+            src: "samples/assets/work-icon.jpg"
             alt: "Icon description"
             width: "80px"
             height: "auto"
@@ -88,7 +88,7 @@ sections:
               border-radius: "35px"
 
   - type: "image"
-    src: "src/main/assets/work_2.png"
+    src: "samples/assets/work_2.png"
     alt: "Image description here"
     width: "25%"
     height: "auto"

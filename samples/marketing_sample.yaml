@@ -19,7 +19,7 @@ sections:
       font-weight: "300"
 
   - type: "image"
-    src: "src/main/assets/sample_2_product_example.jpg"
+    src: "samples/assets/sample_2_product_example.jpg"
     alt: "Summer Collection Banner"
     styles:
       align: "center"
