@@ -38,9 +38,9 @@ jobs:
         run: |
           RELEASE_TYPE="${{ github.ref_name }}"
           if [[ "$RELEASE_TYPE" == "alpha" ]]; then
-            semantic-release version --prerelease alpha
+            semantic-release version --prerelease
           elif [[ "$RELEASE_TYPE" == "beta" ]]; then
-            semantic-release version --prerelease beta
+            semantic-release version --prerelease
           else
             semantic-release version
           fi

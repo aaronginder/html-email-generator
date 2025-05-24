@@ -1,6 +1,9 @@
 # CHANGELOG
 
 
+## v1.0.0-alpha.3 (2025-05-24)
+
+
 ## v1.0.0-alpha.2 (2025-05-24)
 
 ### Features
