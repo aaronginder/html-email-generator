@@ -1,0 +1,41 @@
+title: Example Release
+
+layout:
+  type: "newsletter"
+  width: "750px"
+
+sections:
+  - type: "header"
+    content: "May 2025 | Release Notes"
+    styles:
+      background-color: "#241d1d"
+      color: "#ffffff"
+      padding: "15px"
+      text-align: "center"
+      font-size: "24px"
+      font-family: "Arial, sans-serif"
+
+  - type: "paragraph"
+    content: "We are excited to announce the release of our latest version, packed with new features and improvements. This release focuses on enhancing user experience and performance."
+    styles:
+      padding: "15px"
+      font-size: "16px"
+      font-family: "Arial, sans-serif"
+  # Add a button with the same background color as the header
+  - type: "block"
+    styles:
+      padding: "15px"
+      text-align: "center"
+    rows:
+      - columns:
+          - type: "link"
+            content: "Learn More"
+            href: "https://example.com"
+            styles:
+              background-color-link: "#241d1d"  # Same as header
+              color: "#ffffff"
+              font-size: "16px"
+              border-radius: "20px"  # Circular but rectangle shape
+              padding: "10px 20px"
+              text-align: "center"
+              

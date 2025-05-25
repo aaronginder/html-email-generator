@@ -1,5 +1,45 @@
 # Release Notes
 
+## v1.0.0
+
+### Features / Fixes
+
+- :rocket: First stable release of the HTML Email Generator
+- :new: Added command-line interface for generating emails
+- :new: Implemented support for custom buttons with rounded corners
+- :new: Added support for positioning logos in different locations
+- :hammer_and_wrench: Improved error handling for missing image files
+- :hammer_and_wrench: Enhanced styling options for all email elements
+- :bug: Fixed import issues when installing package from GitHub
+- :bug: Corrected module imports in CLI component
+
+### Docs
+
+- :memo: Updated installation instructions for pip installation
+- :memo: Added comprehensive usage examples for all email components
+- :memo: Improved documentation on styling parameters
+- :memo: Added sample templates for common email types
+
+### DevOps
+
+- :gear: Finalized semantic-release configuration
+- :gear: Implemented branch-based release strategy
+- :gear: Added GitHub Actions workflow for automated testing and releases
+
+## v1.0.0-alpha.5
+
+### Features / Fixes
+
+- :new: Added Poetry build system for package management
+- :new: Implemented CLI entry point for easier command-line usage
+- :hammer_and_wrench: Fixed package structure for proper installation
+- :bug: Fixed import path issues in CLI module
+
+### Docs
+
+- :memo: Added instructions for using the CLI tool
+- :memo: Updated installation instructions
+
 ## v1.0.0-alpha.2
 
 ### Features / Fixes
