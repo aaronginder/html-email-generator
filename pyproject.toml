@@ -1,0 +1,87 @@
+[tool.poetry]
+name = "emailer"
+version = "0.1.0"
+description = "Creates a html file that can be used for emails."
+authors = ["Aaron Ginder <aaronginder@hotmail.co.uk>"]
+license = "MIT"
+packages = [
+    { include = "emailer" }
+]
+readme = "README.md"
+package-mode = true
+
+[tool.poetry.dependencies]
+python = "^3.8"
+PyYAML = "^6.0.2"
+pytest = "^8.3.3"
+hypothesis = "^6.112.1"
+
+[tool.poetry.group.dev.dependencies]
+python-semantic-release = "^9.21.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_variable = [
+    "pyproject.toml:version"
+]
+version_source = "commit"
+commit_parser = "conventional"
+commit_message = "chore(release): {version} [skip ci]"
+tag_format = "v{version}"
+major_on_zero = false
+
+[tool.semantic_release.branches.main]
+match = "main"
+prerelease = false
+
+[tool.semantic_release.branches.develop]
+match = "develop"
+prerelease = true
+prerelease_token = "dev"
+
+[tool.semantic_release.branches.alpha]
+prerelease = true
+prerelease_token = "alpha"
+match = "alpha"
+
+[tool.semantic_release.branches.beta]
+prerelease = true
+prerelease_token = "beta"
+match = "beta"
+
+[tool.semantic_release.changelog]
+template_dir = "templates"
+exclude_commit_patterns = ["chore*"]
+
+[tool.semantic_release.changelog.default_templates]
+changelog_file = "CHANGELOG.md"
+
+[[tool.semantic_release.changelog.sections]]
+type = "feat"
+section = "Features"
+
+[[tool.semantic_release.changelog.sections]]
+type = "fix"
+section = "Bug Fixes"
+
+[[tool.semantic_release.changelog.sections]]
+type = "perf"
+section = "Performance"
+
+# Git configuration
+commit_message = "chore(release): {version} [skip ci]"
+tag_message = "Release {version}"
+
+# GitHub configuration
+github_repository = "aaronginder/cloud-infrastructure"
+github_token = true
+
+[tool.semantic_release.publish]
+upload_to_repository = true
+build_command = ""
+
+[tool.poetry.scripts]
+emailer = "emailer.cli:main"

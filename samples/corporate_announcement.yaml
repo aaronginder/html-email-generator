@@ -1,0 +1,75 @@
+# Professional Newsletter Template
+# A template for creating a professional-looking newsletter. This template includes a header, an introductory paragraph, a main content section, and a footer with an image.
+
+title: "Corporate Anouncement"
+
+layout:
+  type: "newsletter"
+  width: "750px"
+
+sections:
+  - type: "header"
+    content: "Announcement"
+    styles:
+      background-color: "#004080"
+      color: "#ffffff"
+      padding: "20px 0px"
+      text-align: "center"
+      font-size: "36px"
+      border-radius: "0px"
+      font-family: Helvetica, sans-serif
+
+  - type: "paragraph"
+    width: "100%"
+    content: |
+      <b>To:</b> All Employees
+      <b>From:</b> The Management Team
+      <b>Subject:</b> Monthly Updates and News
+    styles:
+      background-color: "#e0e0e0"
+      color: "#333333"
+      padding: "20px"
+      font-size: "16px"
+      border-radius: "0px"
+      text-align: left
+      font-family: Arial, sans-serif
+
+  - type: "paragraph"
+    width: "100%"
+    content: |
+      <b>Company Performance:</b>
+      This month, we achieved a significant milestone in our sales targets. Our team has worked tirelessly to ensure we meet our goals, and we are proud of the collective effort.
+
+      <b>Upcoming Events:</b>
+      Don't miss our annual company retreat next month. It's a great opportunity to relax, bond with colleagues, and participate in team-building activities.
+
+      <b>Employee Spotlight:</b>
+      Congratulations to Jane Doe for being awarded Employee of the Month! Jane has consistently demonstrated exceptional performance and dedication to her work.
+
+      <b>Buildings:</b>
+      Please note that the office will be closed on the last Friday of this month for maintenance. Ensure you complete all necessary tasks beforehand.
+    styles:
+      background-color: "#ffffff"
+      color: "#333333"
+      padding: "20px"
+      font-size: "16px"
+      border-radius: "5px"
+      text-align: left
+      font-family: Arial, sans-serif
+
+  - type: "paragraph"
+    width: "100%"
+    content: |
+      <b>Highlights of this month:</b>
+      <ul><li>Company performance and achievements</li>
+        <li>Upcoming events and activities</li>
+        <li>Employee spotlight</li>
+        <li>Important announcements</li></ul>
+    styles:
+      background-color: "#ffffff"
+      color: "#333333"
+      padding: "0px 0px 0px 20px"
+      font-size: "16px"
+      border-radius: "0px"
+      text-align: left
+      font-family: Arial, sans-serif

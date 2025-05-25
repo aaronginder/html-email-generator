@@ -1,0 +1,108 @@
+title: "Your Email Title Here"
+
+layout:
+  type: "newsletter"
+  width: "750px"
+
+sections:
+  - type: "headers"
+    content: "Demo Header Content Here"
+    styles:
+      background-color: "#241d1d"
+      color: "#ffffff"
+      padding: "15px"
+      text-align: "center"
+      font-size: "24px"
+
+  - type: "paragraph"
+    content: |
+      <i>For optimal viewing of this email, use the <b>web</b> or <b>new outlook</b> application!</i>
+    styles:
+      background-color: "#241d1d"
+      color: "#ffffff"
+      padding: "5px"
+      font-size: "16px"
+      text-align: center
+
+  - type: "image"
+    src: "samples/assets/example_1.webp"
+    alt: "Image description here"
+    width: "auto"
+    height: "auto"
+    styles:
+      color: "#ffffff"
+      text-align: "center"
+
+  - type: "paragraph"
+    content: |
+      This is an example paragraph.
+      You can use HTML tags like <br> for line breaks.
+    styles:
+      background-color: "#ffffff"
+      color: "#333333"
+      padding: "20px"
+      font-size: "20px"
+      text-align: "center"
+      # border-radius: "5px"
+
+  - type: "list"
+    items:
+      - "First item in the list."
+      - "Second item with more details."
+    styles:
+      background-color: "#e9ecef"
+      color: "#333333"
+      padding: "15px"
+      font-size: "16px"
+      # border-radius: "5px"
+      list-style-type: "disc"
+
+  - type: "block"
+    styles:
+      background-color: "#ffffff"
+      padding: "20px"
+      # border-radius: "5px"
+      box-shadow: "0px 0px 5px rgba(0, 0, 0, 0.1)"
+    rows:
+      - columns:
+          - type: "icon"
+            src: "samples/assets/work-icon.jpg"
+            alt: "Icon description"
+            width: "80px"
+            height: "auto"
+            styles:
+              padding: 10px 10px 0px 0px
+          - type: "text"
+            content: "An example of a column in a row!"
+            styles:
+              font-size: "16px"
+              text-align: "center"
+              padding: 10px 30px 0px 0px
+          - type: "link"
+            content: "Click Here"
+            href: "https://www.linkedin.com/in/aaron-ginder/"
+            styles:
+              text-decoration: "none"
+              font-size: "16px"
+              padding: "10px 15px"
+              border-radius: "35px"
+
+  - type: "image"
+    src: "samples/assets/work_2.png"
+    alt: "Image description here"
+    width: "25%"
+    height: "auto"
+    styles:
+      border-radius: "10px"
+      padding: "10px"
+      text-align: "center"
+
+  - type: "footer"
+    content: "Thank you for being a valued member of our community."
+    styles:
+      background-color: "#333333"
+      color: "#ffffff"
+      padding: "10px"
+      text-align: "center"
+      font-size: "14px"
+      border-radius: "5px"
