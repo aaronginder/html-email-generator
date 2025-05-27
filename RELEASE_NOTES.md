@@ -1,5 +1,11 @@
 # Release Notes
 
+## v1.0.1
+
+### Features / Fixes
+
+- :bug: Fixed relative import for generator module in the cli
+
 ## v1.0.0
 
 ### Features / Fixes
