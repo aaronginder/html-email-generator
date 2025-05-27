@@ -54,7 +54,7 @@ pip install git+https://github.com/aaronginder/html-email-generator.git
 To install a specific version:
 
 ```sh
-pip install git+https://github.com/aaronginder/html-email-generator.git@v1.0.0
+pip install git+https://github.com/aaronginder/html-email-generator.git@v1.0.1
 ```
 
 ### Development Installation
