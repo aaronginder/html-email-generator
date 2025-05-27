@@ -1,5 +1,5 @@
 import argparse
-from generator import EmailHTMLGenerator
+from .generator import EmailHTMLGenerator
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Generate HTML email from a config file.')
